@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="styles.css" />
+
+        <script defer src="index.js"></script>
+
+        <title>You Will (Not) Win</title>
+    </head>
+    <body>
+        <section>
+            <h1>You Will (Not) Win</h1>
+
+            <h3>Pieces</h3>
+            <div id="pieces-container">
+                <div class="piece"></div>
+                <div class="piece"></div>
+                <div class="piece"></div>
+                <div class="piece"></div>
+                <div class="piece"></div>
+                <div class="piece"></div>
+                <div class="piece"></div>
+                <div class="piece"></div>
+                <div class="piece"></div>
+                <div class="piece"></div>
+                <div class="piece"></div>
+                <div class="piece"></div>
+            </div>
+
+            <section id="moves-container">
+                <h3>Moves</h3>
+                <button id="button-take-1" disabled>1</button>
+                <button id="button-take-2" disabled>2</button>
+                <button id="button-take-3" disabled>3</button>
+            </section>
+
+            <section id="restart-container" class="hidden">
+                <h3>You (Did Not) Win!</h3>
+                <button id="button-restart">Try Again</button>
+            </section>
+
+            <section>
+                <h3>How To Play</h3>
+                <p>The goal of this game is to control the last piece.</p>
+                <p>
+                    On each turn you can take control of the first 1, 2, or 3 uncontrolled pieces. The computer will
+                    then do the same.
+                </p>
+            </section>
+        </section>
+    </body>
+</html>

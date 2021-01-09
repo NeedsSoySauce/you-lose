@@ -1,0 +1,22 @@
+#pieces-container {
+    display: flex;
+}
+
+.piece {
+    background-color: lightgray;
+    width: 12px;
+    height: 24px;
+    margin: 2px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.hidden {
+    display: none;
+}
