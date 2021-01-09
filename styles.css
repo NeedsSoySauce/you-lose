@@ -1,22 +1,80 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    min-width: 110px;
+    padding: 6px 16px;
+    outline: none;
+    border: 0;
+    background-color: #90caf9;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+button:hover {
+    background-color: rgb(100, 141, 174);
+    box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.4), 0px 3px 4px 0px rgba(0, 0, 0, 0.28),
+        0px 1px 8px 0px rgba(0, 0, 0, 0.24);
+}
+
+button:active {
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+a {
+    color: #fff;
+}
+
 #pieces-container {
     display: flex;
 }
 
+.main-content {
+    margin-top: 50px;
+}
+
 .piece {
     background-color: lightgray;
-    width: 12px;
-    height: 24px;
-    margin: 2px;
+    width: 32px;
+    height: 64px;
+    margin: 3px;
 }
 
 .red {
-    background-color: red;
+    background-color: #ef5350;
 }
 
 .green {
-    background-color: green;
+    background-color: #8bc34a;
 }
 
 .hidden {
     display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.flex.vertical {
+    flex-direction: column;
+}
+
+.paper {
+    width: min-content;
+    background-color: #424242;
+    padding: 24px;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 8px 0px rgba(0, 0, 0, 0.12);
 }
